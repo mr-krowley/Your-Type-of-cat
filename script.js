@@ -14,7 +14,7 @@ function createCard(obj) {
 
   let image = document.createElement("img");
   image.classList.add("image");
-  image.textContent = obj.img;
+  image.setAttribute("src", obj.img);
 
 
 

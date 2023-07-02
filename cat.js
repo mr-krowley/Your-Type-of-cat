@@ -1,7 +1,7 @@
 export let data = [
   {
     title: "Вы котик злодей!",
-    img: "https://www.google.com/search?q=rjnbr+pkj%3Bltq&tbm=isch&ved=2ahUKEwjgkpjRw-b_AhWB_SoKHSaID0IQ2-cCegQIABAA&oq=rjnbr+pkj%3Bltq&gs_lcp=CgNpbWcQDDoHCCMQ6gIQJzoICAAQgAQQsQM6BQgAEIAEOgsIABCKBRAKEAEQQzoJCAAQgAQQChABOgcIABCKBRBDOgQIABAeOgYIABAFEB46BwgAEIAEEAo6BwgAEIAEEAFQrgtYpCdgsTJoAXAAeACAAUWIAfIEkgECMTSYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABA8ABAQ&sclient=img&ei=BnOcZOD3HoH7qwGmkL6QBA&bih=919&biw=1920#imgrc=wbiJWhLnnVPGVM",
+    img: "./styles/bk/злодей.jpg",
     keywords: "злой злюка злодей зловещий злость злючка злоба",
   },
 
@@ -31,8 +31,8 @@ export let data = [
   },
 
   {
-    title: "Вы котк дурачек",
-    img: "",
+    title: "Вы котик дурачек",
+    img: "./styles/bk/дурачек.webp",
     keywords: "дурак балбес дибил смешной веселый глупый дурачек дурашка",
   },
 
