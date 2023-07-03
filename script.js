@@ -1,3 +1,4 @@
+// подтягиваем данные для карточек
 import { data } from "./cat.js";
 
 const containerCard = document.querySelector(".containerCard");
@@ -7,8 +8,8 @@ const input = document.querySelector("input");
 
 
 function createCard(obj) {
-  
-  //создаем саму карточу котика
+  //функция создаем саму карточу котика
+
   let card = document.createElement("div");
   card.classList.add("catCard");
 
@@ -28,9 +29,34 @@ function createCard(obj) {
 
 
 function reviewCard(arr) {
+  // функция перебора элементов из  передоваемого data она же и вызывает метот отрисовки createCard
   arr.forEach(function (elem) {
     createCard(elem);
   });
 } 
 
-reviewCard(data);
+function searchFilter(event) {
+  // функция обработчик поисковой строки сравнение ввода с ключевыми словами карточек
+  let value = event.target.value.toLowerCase().trim();
+  let filterDate = data.filter(
+    (card) =>
+      card.keywords.toLowerCase().includes(value)
+  );
+  containerCard.innerHTML = "";
+  reviewCard(filterDate);
+  console.dir(value);
+  console.log("работаю");
+}
+
+
+(function main() {
+  // самовызывающаяся функция main точкa входа в програму
+  reviewCard(data);
+})();
+
+
+
+
+
+//прослушка поиска
+input.addEventListener("input", searchFilter);
