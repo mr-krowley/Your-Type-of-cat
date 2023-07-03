@@ -110,3 +110,60 @@ input:focus {
   line-height: 21px;
   background:#cd853f;
 }
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* дизайн кнопок */
+.buttonCat{
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 100px 20px;
+  position: relative;
+  color:  #abb5be;
+  border: 1px solid #cd853f;
+  border-radius: 5px;
+  background: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.buttonCat:before, .buttonCat:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.buttonCat:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #cd853f;
+  border-top: 1px solid#cd853f;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.buttonCat:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid #cd853f;
+  border-bottom: 1px solid #cd853f;
+  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+.buttonCat:hover:before, 
+.buttonCat:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.buttonCat:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+.buttonCat:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+.buttonCat:hover {
+  background: rgba(255, 255, 255, .2);
+}
