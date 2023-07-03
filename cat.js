@@ -7,26 +7,26 @@ export let data = [
 
   {
     title: "Вы котик обжора!",
-    img: "https://www.google.com/search?q=rjnbr+pkj%3Bltq&tbm=isch&ved=2ahUKEwjgkpjRw-b_AhWB_SoKHSaID0IQ2-cCegQIABAA&oq=rjnbr+pkj%3Bltq&gs_lcp=CgNpbWcQDDoHCCMQ6gIQJzoICAAQgAQQsQM6BQgAEIAEOgsIABCKBRAKEAEQQzoJCAAQgAQQChABOgcIABCKBRBDOgQIABAeOgYIABAFEB46BwgAEIAEEAo6BwgAEIAEEAFQrgtYpCdgsTJoAXAAeACAAUWIAfIEkgECMTSYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABA8ABAQ&sclient=img&ei=BnOcZOD3HoH7qwGmkL6QBA&bih=919&biw=1920#imgrc=WkQIMFKMWvdbDM",
+    img: "./styles/bk/обжора.jpg",
     keywords:
       "голод голодный обжора прожорливый жрать обжираловка покушать кушать есть еда",
   },
 
   {
     title: "Вы котик пуся!",
-    img: "",
+    img: "./styles/bk/пуся.jpg",
     keywords: "милашка пуся милый малыш забавный милота уиии",
   },
 
   {
     title: "Вы котик зайка!",
-    img: "",
+    img: "./styles/bk/зайка.jpg",
     keywords: "зайка зайченок зая",
   },
 
   {
     title: "Вы котик соня",
-    img: "",
+    img: "./styles/bk/соня.jpg",
     keywords: "ленивый соня сонливый сон спать бездельничать бездельник лень ",
   },
 
